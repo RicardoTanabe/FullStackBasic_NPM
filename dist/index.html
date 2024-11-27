@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/micromodal/dist/micromodal.min.css">
+    <script src="./main.js" defer></script>
+    <title>NPM - External Packages</title>
+</head>
+<body>
+    <div id="container-date-time">
+        <div id="location"><span id="timezone">America/Sao_Paulo</span> 
+            <a data-micromodal-trigger="modal-1" id="icon">
+                <i class="fi fi-rs-pen-field"></i>
+            </a>
+        </div>
+        <div id="time"></div>
+        <div id="date"></div>
+        <div id="modal-1" class="modal" aria-hidden="true" data-micromodal-close>
+            <div tabindex="-1">
+                <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <main>
+                        <label for="timezone-select">Change Timezone</label><br />
+                        <div id="choose-timezone">
+                            <div id="selector">
+                                <select id="timezone-select">
+                                    <option value="America/Sao_Paulo">Brasil (UTC-3)</option>>
+                                    <option value="America/New_York">New York (EST)</option>>
+                                    <option value="Europe/London">London (GMT)</option>
+                                    <option value="Asia/Tokyo">Tokyo (JST)</option>
+                                </select>
+                            </div>
+                            <div id="apply">
+                                <a id="apply-button" aria-label="Close modal" data-micromodal-close>Apply</a>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

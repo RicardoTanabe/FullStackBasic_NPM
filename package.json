@@ -1,0 +1,33 @@
+{
+  "name": "fullstackbasic_npm",
+  "version": "1.0.0",
+  "description": "Aprendendo sobre o npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --mode=production",
+    "watch": "webpack --progress --watch",
+    "serve": "webpack-dev-server --open"
+  },
+  "keywords": [
+    "npm",
+    "nodejs"
+  ],
+  "author": "Ricardo Tanabe",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "dayjs-plugin-utc": "^0.1.2",
+    "fullstackbasic_npm": "file:",
+    "micromodal": "^0.4.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "install": "^0.13.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
